@@ -42,7 +42,6 @@ export class HomePage {
   ]
   constructor() {}
 
-  // open url link
   async openLinkInWebView(url: string) {
     await Browser['open']({ url: url });
   }
