@@ -1,5 +1,7 @@
 {
   "name": "yakkarball",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
