@@ -1,20 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar mode="ios" class="ion-no-border">
+    <img src="../../assets/images/logo.gif" alt="Image" class="img_logo">
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content [scrollY]="false">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let category of cateType">
+        <ion-card mode="ios" (click)="openLinkInWebView(category.cate_url)">
+          <img [src]="category.cate_img" alt="Image" class="img_category">
+        
+          <ion-card-content>
+            {{category.cate_name}}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
