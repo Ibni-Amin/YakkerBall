@@ -45,4 +45,8 @@ export class HomePage {
   async openLinkInWebView(url: string) {
     await Browser['open']({ url: url });
   }
+
+  openFunction(){
+    console.log('Testing');
+  }
 }
