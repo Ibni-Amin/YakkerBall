@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Plugins } from '@capacitor/core';
-const { Browser } = Plugins;
+import { Browser } from '@capacitor/browser';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +8,7 @@ const { Browser } = Plugins;
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  isLoaderShow: boolean = false;
   cateType: any[] = [
     {
       cate_name: 'Home',
@@ -35,18 +36,29 @@ export class HomePage {
       cate_url: 'https://yakkerball.com/privacy-policy',
     },
     {
-      cate_name: 'Content',
+      cate_name: 'Contact',
       cate_img: '../../assets/images/content.png',
       cate_url: 'https://yakkerball.com/',
     },
   ];
-  constructor() {}
+  constructor(private loadingCtrl: LoadingController) { }
+
+
 
   async openLinkInWebView(url: string) {
-    await Browser['open']({ url: url });
+    this.isLoaderShow = true;
+    if (url) {
+      console.log('Url:--', url);
+      const browser = await Browser.open({ url: url });
+
+      Browser.addListener('browserPageLoaded', () => {
+        this.isLoaderShow = false;
+        console.log('Url: Page Loaded',);
+      })
+
+    } else {
+      this.isLoaderShow = false;
+    }
   }
 
-  openFunction(){
-    console.log('Testing');
-  }
 }

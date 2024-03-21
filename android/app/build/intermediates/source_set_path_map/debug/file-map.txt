@@ -34,4 +34,5 @@ io.ionic.starter.app-packaged_res-32 D:\Android Project\WebView\WebViewApp\node_
 io.ionic.starter.app-packaged_res-33 D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\browser\android\build\intermediates\packaged_res\debug
 io.ionic.starter.app-packaged_res-34 D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\haptics\android\build\intermediates\packaged_res\debug
 io.ionic.starter.app-packaged_res-35 D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\keyboard\android\build\intermediates\packaged_res\debug
-io.ionic.starter.app-packaged_res-36 D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\status-bar\android\build\intermediates\packaged_res\debug
+io.ionic.starter.app-packaged_res-36 D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\splash-screen\android\build\intermediates\packaged_res\debug
+io.ionic.starter.app-packaged_res-37 D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\status-bar\android\build\intermediates\packaged_res\debug

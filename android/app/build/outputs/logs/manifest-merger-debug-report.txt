@@ -1,15 +1,15 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:27:9-35:20
+INJECTED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:25:9-35:20
 	android:grantUriPermissions
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:31:13-47
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:29:7-41
 	android:authorities
 		INJECTED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:29:13-64
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:27:7-58
 	android:exported
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:28:7-31
 	android:name
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:28:13-62
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:26:7-56
 manifest
 ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:2:1-41:12
 INJECTED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:2:1-41:12
@@ -19,6 +19,7 @@ MERGED from [:capacitor-app] D:\Android Project\WebView\WebViewApp\node_modules\
 MERGED from [:capacitor-browser] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\browser\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-21:12
 MERGED from [:capacitor-haptics] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:capacitor-keyboard] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:capacitor-splash-screen] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:capacitor-status-bar] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:capacitor-android] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:capacitor-cordova-android-plugins] D:\Android Project\WebView\WebViewApp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
@@ -74,7 +75,7 @@ INJECTED from D:\Android Project\WebView\WebViewApp\android\app\src\main\Android
 	xmlns:android
 		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:4:5-36:19
+ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:3:5-36:19
 MERGED from [:capacitor-browser] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\browser\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-19:19
 MERGED from [:capacitor-browser] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\browser\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-19:19
 MERGED from [:capacitor-cordova-android-plugins] D:\Android Project\WebView\WebViewApp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-9:19
@@ -94,41 +95,41 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Aqibkhan\.gradle\c
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.0] C:\Users\Aqibkhan\.gradle\caches\transforms-3\4084e7bcb4a1738e1ff26326a1997c6e\transformed\core-1.10.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:8:5-31
 	android:label
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:7:9-41
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:6:5-37
 	android:roundIcon
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:7:5-50
 	android:icon
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:5:5-39
 	android:allowBackup
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:5:9-35
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:4:5-31
 	android:theme
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:10:9-40
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:9:5-36
 activity#io.ionic.starter.MainActivity
-ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:12:9-25:20
+ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:11:9-23:20
 	android:label
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:15:13-56
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:14:7-50
 	android:launchMode
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:17:13-44
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:16:7-38
 	android:exported
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:18:13-36
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:17:7-30
 	android:configChanges
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:13:13-129
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:12:7-123
 	android:theme
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:16:13-62
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:15:7-56
 	android:name
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:13:7-35
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:20:13-23:29
+ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:19:13-22:29
 action#android.intent.action.MAIN
-ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:21:27-74
 uses-permission#android.permission.INTERNET
 ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:40:5-67
 	android:name
@@ -145,6 +146,8 @@ MERGED from [:capacitor-haptics] D:\Android Project\WebView\WebViewApp\node_modu
 MERGED from [:capacitor-haptics] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-keyboard] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-keyboard] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:capacitor-splash-screen] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:capacitor-splash-screen] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-status-bar] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-status-bar] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-android] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
@@ -230,11 +233,11 @@ INJECTED from D:\Android Project\WebView\WebViewApp\android\app\src\main\Android
 		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:32:13-34:64
+ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:31:13-34:9
 	android:resource
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:34:17-51
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:33:9-43
 	android:name
-		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:33:17-67
+		ADDED from D:\Android Project\WebView\WebViewApp\android\app\src\main\AndroidManifest.xml:32:9-59
 queries
 ADDED from [:capacitor-browser] D:\Android Project\WebView\WebViewApp\node_modules\@capacitor\browser\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-11:15
 intent#action:name:android.support.customtabs.action.CustomTabsService
