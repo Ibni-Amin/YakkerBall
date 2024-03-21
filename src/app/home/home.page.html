@@ -7,7 +7,7 @@
   <ion-grid>
     <ion-row>
       <ion-col size="6" *ngFor="let category of cateType">
-        <ion-card mode="ios" (click)="openLinkInWebView(category?.cate_url)">
+        <ion-card [button]="true" mode="ios" (click)="openLinkInWebView(category?.cate_url)">
           <img [src]="category?.cate_img" alt="Image" class="img_category">
           <ion-card-content>{{category?.cate_name}}</ion-card-content>
         </ion-card>
