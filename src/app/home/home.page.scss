@@ -4,6 +4,7 @@ ion-content {
 
 ion-toolbar{
   --background: #152a47;
+  text-align: center;
 }
 
 ion-header{
@@ -17,6 +18,8 @@ ion-card-content {
   margin-right: 5px;
   --padding-start: 5px;
   --padding-end: 5px;
+  --padding-top: 13px;
+  --padding-bottom: 13px;
   padding-inline-start: 5px;
   padding-inline-end: 5px;
 }
@@ -30,7 +33,7 @@ ion-card {
 }
 
 .img_category {
-  width: 105px;
+  width: 85px;
   margin-top: 16px;
 }
 
