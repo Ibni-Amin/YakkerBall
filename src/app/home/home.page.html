@@ -7,14 +7,14 @@
   <ion-grid>
     <ion-row>
       <ion-col size="6" *ngFor="let category of cateType">
-        <ion-card mode="ios" (click)="openLinkInWebView(category.cate_url)">
-          <img [src]="category.cate_img" alt="Image" class="img_category">
-        
-          <ion-card-content>
-            {{category.cate_name}}
-          </ion-card-content>
+        <ion-card mode="ios" (click)="openLinkInWebView(category?.cate_url)">
+          <img [src]="category?.cate_img" alt="Image" class="img_category">
+          <ion-card-content>{{category?.cate_name}}</ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <div style="position: absolute; bottom: 50%; width: 100%; text-align: center;" *ngIf="isLoaderShow">
+    <ion-spinner name="circles" style="color: #fff; width: 50px; height: 50px;"></ion-spinner>
+  </div>
 </ion-content>
