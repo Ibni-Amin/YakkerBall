@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Browser } from '@capacitor/browser';
 import { LoadingController } from '@ionic/angular';
 
 @Component({
@@ -9,6 +8,8 @@ import { LoadingController } from '@ionic/angular';
 })
 export class HomePage {
   isLoaderShow: boolean = false;
+  openUrl: string = '';
+  page: string = '';
   cateType: any[] = [
     {
       cate_name: 'Home',
@@ -41,24 +42,25 @@ export class HomePage {
       cate_url: 'https://yakkerball.com/',
     },
   ];
-  constructor(private loadingCtrl: LoadingController) { }
+  constructor(private loadingCtrl: LoadingController) {}
 
-
-
-  async openLinkInWebView(url: string) {
+  async openLinkInWebView(url: string, pageName: string) {
     this.isLoaderShow = true;
     if (url) {
       console.log('Url:--', url);
-      const browser = await Browser.open({ url: url });
-
-      Browser.addListener('browserPageLoaded', () => {
-        this.isLoaderShow = false;
-        console.log('Url: Page Loaded',);
-      })
-
+      this.openUrl = url;
+      this.page = pageName;
     } else {
       this.isLoaderShow = false;
     }
+
+    setTimeout(() => {
+      this.isLoaderShow = false;
+    }, 2000);
   }
 
+  goBack() {
+    this.openUrl = '';
+    this.page = '';
+  }
 }

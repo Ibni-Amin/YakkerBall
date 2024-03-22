@@ -1,13 +1,24 @@
-<ion-header mode="ios" class="ion-no-border">
+<ion-header *ngIf="!page" mode="ios" class="ion-no-border">
   <ion-toolbar mode="ios" class="ion-no-border">
     <img src="../../assets/images/logo.gif" alt="Image" class="img_logo">
   </ion-toolbar>
 </ion-header>
+<ion-header *ngIf="page" mode="ios" class="ion-no-border">
+  <ion-toolbar mode="ios" class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="chevron-back-outline"></ion-icon> Back
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="white" style="color: #ffffff;">{{ page }}</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content [scrollY]="false">
+  <iframe *ngIf="openUrl" [src]="openUrl | safe: 'resourceUrl'" style="width:100%;height:100%" scrolling="yes"></iframe>
   <ion-grid>
     <ion-row>
       <ion-col size="6" *ngFor="let category of cateType">
-        <ion-card [button]="true" mode="ios" (click)="openLinkInWebView(category?.cate_url)">
+        <ion-card [button]="true" mode="ios" (click)="openLinkInWebView(category?.cate_url, category?.cate_name)">
           <img [src]="category?.cate_img" alt="Image" class="img_category">
           <ion-card-content>{{category?.cate_name}}</ion-card-content>
         </ion-card>
