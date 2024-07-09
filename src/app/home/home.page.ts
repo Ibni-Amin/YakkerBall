@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
+import { CsrfTokenService } from '../services/csrf.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
   isLoaderShow: boolean = false;
   openUrl: string = '';
   page: string = '';
@@ -42,12 +43,22 @@ export class HomePage {
       cate_url: 'https://yakkerball.com/',
     },
   ];
-  constructor(private loadingCtrl: LoadingController) {}
+  isAppData: string = 'no';
+  constructor(private apiService: CsrfTokenService) {}
+
+  ngOnInit(): void {
+    this.apiService.get().subscribe((res: any) => {
+      this.isAppData = res.apple;
+      console.log('res:---', res);
+    });
+  }
 
   async openLinkInWebView(url: string, pageName: string) {
     this.isLoaderShow = true;
     if (url) {
       console.log('Url:--', url);
+      // let timestamp = new Date().getTime();
+      // const u = `${url}?key=${timestamp}`;
       this.openUrl = url;
       this.page = pageName;
     } else {

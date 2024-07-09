@@ -1,31 +1,160 @@
-<ion-header *ngIf="!page" mode="ios" class="ion-no-border">
-  <ion-toolbar mode="ios" class="ion-no-border">
-    <img src="../../assets/images/logo.gif" alt="Image" class="img_logo">
-  </ion-toolbar>
-</ion-header>
-<ion-header *ngIf="page" mode="ios" class="ion-no-border">
-  <ion-toolbar mode="ios" class="ion-no-border">
-    <ion-buttons slot="start">
-      <ion-button (click)="goBack()">
-        <ion-icon name="chevron-back-outline"></ion-icon> Back
-      </ion-button>
-    </ion-buttons>
-    <ion-title color="white" style="color: #ffffff;">{{ page }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content [scrollY]="false">
-  <iframe *ngIf="openUrl" [src]="openUrl | safe: 'resourceUrl'" style="width:100%;height:100%" scrolling="yes"></iframe>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6" *ngFor="let category of cateType">
-        <ion-card [button]="true" mode="ios" (click)="openLinkInWebView(category?.cate_url, category?.cate_name)">
-          <img [src]="category?.cate_img" alt="Image" class="img_category">
-          <ion-card-content>{{category?.cate_name}}</ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <div style="position: absolute; bottom: 50%; width: 100%; text-align: center;" *ngIf="isLoaderShow">
-    <ion-spinner name="circles" style="color: #fff; width: 50px; height: 50px;"></ion-spinner>
-  </div>
-</ion-content>
+<ng-container *ngIf="isAppData == 'yes'">
+  <ion-header *ngIf="!page" mode="ios" class="ion-no-border">
+    <ion-toolbar mode="ios" class="ion-no-border">
+      <img src="../../assets/images/logo.gif" alt="Image" class="img_logo" />
+    </ion-toolbar>
+  </ion-header>
+  <ion-header *ngIf="page" mode="ios" class="ion-no-border">
+    <ion-toolbar mode="ios" class="ion-no-border">
+      <ion-buttons slot="start">
+        <ion-button (click)="goBack()">
+          <ion-icon name="chevron-back-outline"></ion-icon> Back
+        </ion-button>
+      </ion-buttons>
+      <ion-title color="white" style="color: #ffffff">{{ page }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [scrollY]="false">
+    <iframe
+      *ngIf="openUrl"
+      [src]="openUrl | safe: 'resourceUrl'"
+      style="width: 100%; height: 100%"
+      scrolling="yes"
+    ></iframe>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" *ngFor="let category of cateType">
+          <ion-card
+            [button]="true"
+            mode="ios"
+            (click)="openLinkInWebView(category?.cate_url, category?.cate_name)"
+          >
+            <img [src]="category?.cate_img" alt="Image" class="img_category" />
+            <ion-card-content>{{category?.cate_name}}</ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div
+      style="position: absolute; bottom: 50%; width: 100%; text-align: center"
+      *ngIf="isLoaderShow"
+    >
+      <ion-spinner
+        name="circles"
+        style="color: #fff; width: 50px; height: 50px"
+      ></ion-spinner>
+    </div>
+  </ion-content>
+</ng-container>
+
+<ng-container *ngIf="isAppData == 'no'">
+  <ion-header mode="ios" class="ion-no-border">
+    <ion-toolbar mode="ios" class="ion-no-border">
+      <img src="../../assets/images/logo.gif" alt="Image" class="img_logo" />
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card button="true">
+            <ion-card-header>Contact Us</ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card>
+            <ion-card-header> Events </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="container">
+      <h1>Events</h1>
+      <div class="event-card">
+        <img src="https://via.placeholder.com/150" alt="Event Image" />
+        <h2>Kensington Little League Celebration</h2>
+        <p class="date">October 4th, 2024</p>
+        <p>
+          Experience the excitement at Kensington Little League's Showcase Day,
+          where budding athletes display their talents for a chance to shine.
+          Every player will receive a complimentary digital baseball card,
+          capturing their unique strengths and skills, courtesy of Kensington
+          Little League. Join us for a day of camaraderie, competition, and the
+          celebration of youth baseball talent in our community.
+        </p>
+      </div>
+      <div class="event-card">
+        <img src="https://via.placeholder.com/150" alt="Event Image" />
+        <h2>Knights Metrics Day</h2>
+        <p class="date">October 4th, 2024</p>
+        <p>
+          Join us for a thrilling Baseball Showcase Day as players showcase
+          their skills and potential for the Knights Baseball program.
+          Participants will undergo precise measurements and evaluations,
+          culminating in the creation of personalized digital profiles, offering
+          them an exclusive opportunity to join the ranks of the esteemed
+          Knights Baseball team. Don't miss this chance to witness the next
+          generation of baseball stars shine and secure their place in the
+          spotlight.
+        </p>
+      </div>
+      <div class="event-card">
+        <img src="https://via.placeholder.com/150" alt="Event Image" />
+        <h2>Wayne Little League Metrics Day</h2>
+        <p class="date">October 4th, 2024</p>
+        <p>
+          Wayne Little League season kick-off will showcase a player-skills
+          competition with fun events like a Home Run Derby, Fastest Player and
+          a full set of individual player metrics. Sign up now to get your
+          measurements and free baseball card.
+        </p>
+      </div>
+      <div class="event-card">
+        <img src="https://via.placeholder.com/150" alt="Event Image" />
+        <h2>NCP College Showcase Day</h2>
+        <p class="date">October 4th, 2024</p>
+        <p>
+          YOUR RECRUITING ROAD OPENS 7/24 - GET MEASURED & GET SEEN! Aiming for
+          a college baseball scholarship? Don't miss our Scouting & Measurement
+          Event on Wednesday, July 24th, led by the legendary Coach Ed Ward.
+          Showcase your talent to D1, D2, and D3 college coaches! Hit the link
+          to learn more.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="successMessage" style="display: none">
+        Form submitted successfully!
+      </p>
+    </div>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.getElementById("successMessage").style.display = "block";
+        });
+    </script>
+  </ion-content>
+</ng-container>
